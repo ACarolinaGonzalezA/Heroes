@@ -30,7 +30,7 @@ main{
     padding: 10px;
     margin-top: 300px;
     margin-right: 20;
-    position: relative;
+    position: relative;  
 }
 
 .main-container{
@@ -51,16 +51,16 @@ main{
 }
 
 .box-1{
-    
+    background-image:url('/img/Frame1.png');
     background-repeat: no-repeat;
     margin-right: 40px;
     border-radius: 15px 15px 0 0;
     position: relative;
-    
 
 }
 
 .box-2{
+    background-image:url('/img/MaskGroup.png');
     margin-right: 40px;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -68,6 +68,7 @@ main{
 
 }
 .box-3{
+    background-image:url('/img/Frame1.png');
     background-repeat: no-repeat;
     margin-right: 40px;
     border-radius: 15px 15px 0 0;
@@ -78,8 +79,7 @@ h2{
     font-size: 30px;
     text-align: center;
     padding: 20px;
-    margin-top: 250px;
-    position: relative;
+    margin-top: -100px;
     
 }
 
@@ -89,24 +89,15 @@ h4{
     padding: 20px;
     text-align: center;
     width: 130px;
-    margin-left: 50px;
-    position: relative;    
+    margin-left: 50px;    
 }
 
-.fotoperfil{
+div img{
     width: 100px;
     display: block;
-    margin: 130px 0 0 50px;
-    position: absolute;
+    margin: 130px auto;
+}
 
-    
-}
-.fondo{
-    width: 100%;
-    position: absolute;
-    margin: -17px 0 0 -20px;
-    
-}
 .heart-icon {
     position: absolute;
     top: 10px;
@@ -117,7 +108,6 @@ h4{
 
 div p{
     margin-bottom: 30px;
-    position: relative;
 }
 footer{
     background-color: #00669F;
