@@ -18,6 +18,7 @@ header{
 
 .header-sticky {
     background-color: #00669F;
+    top: 0;
     font-size: 40px;
     font-weight: bold;
     height: 80px;
@@ -26,7 +27,32 @@ header{
     
     
 }
+main{
+    display: flex;
+    padding: 10px;
+    margin-top: 500px;
+    margin-right: 20;
+}
 
 .main-container{
-    display: inline-block;
+    display: flex;
+    margin-left: 80px;
+    height: 400;
+}
+
+.box{
+    width: 30%;
+      padding: 20px;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+      text-align: center;
+}
+
+
+footer{
+    background-color: #00669F;
+    font-size: 16px;
+    height: 40px;
+    padding: 10px 0 0px 28px;
+    color: #FFF9F9;
 }
