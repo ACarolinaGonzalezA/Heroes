@@ -74,12 +74,13 @@ section article .Batman2{
     background-image: url('../img/Frame1.png');
 }
 
-section article img {
+section article img  {
     border-radius: 50%;
     width: 125px;
     position: absolute;
     top: 130px;
 }
+
 
 section article h3 {
     font-size: 24px;
@@ -108,13 +109,23 @@ section article button {
 .Superman{
     display: none;
 }
+.agregar-btn { 
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Alineación vertical al 50% del cuerpo */
+    right: 0; /* Alineación a la derecha */
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 100%;
+    font-size: 50px;
+    color: #00669f;    
+}
+
 footer {
     background-color: #00669f;
     color: white;
     padding: 30px 0;
     position: relative;
     display: flex;
-    
     flex-wrap: wrap;
 }
 
@@ -126,6 +137,7 @@ footer img {
 
 @media (max-width: 768px){
     /* Tablets */
+    
 .MujerM{
     display: block;
 }
@@ -151,7 +163,12 @@ footer img {
         display: none;
 }
 footer p{
-    font-size: 12px;
+    font-size: 10px;
+    }
+footer img {
+        position: absolute;
+        right: 20px;
+        width: 50px;
     }
 
 }
