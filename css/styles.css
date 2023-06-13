@@ -1,116 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
-/********** ESTILOS PARA EL HEADER **********/
-
-header p {
-  background-color: #1cd1b0;
-  padding: 2px 0px 2px 10px;
+.header-h2{
+    background-color:#1CD1B0;
+    margin: 0;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
 }
 
 h1 {
-  background-color: #00669f;
-  color: white;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 15px;
+    position:sticky; top: 0;
+    z-index: 10;
 }
 
-/********** ESTILOS PARA EL MAIN **********/
-
 section {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 section article {
-  background-color: #f3f3f3;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
-  margin: 100px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 300px;
+    background-color: #f3f3f3;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 300px;
 }
 
 section article .contenedor {
-  height: 200px;
-  width: 300px;
-  border-radius: 16px 16px 0 0;
-  background-size: cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+    background-size: cover;
 }
 
 section article .contenedor i {
-  font-size: 24px;
-  color: red;
-  padding: 15px;
+    font-size: 24px;
+    color: red;
+    padding: 15px;
 }
 
-section article .bgBatman {
-  background-image: url("../img/fondoBatman.png");
+section article .Batman1{    
+    background-image: url('../img/Frame1.png');
 }
-section article .bgHarley {
-  background-image: url("../img/fondoHarleyQuinn.png");
+
+section article .MujerM{
+    background-image: url('../img/fondomujermaravilla.png');
 }
-section article .bgSuperman {
-  background-image: url("../img/fondoSuperman.png");
+section article .Superman{
+    background-image: url('../img/fondoSuperman.png');
+}
+
+section article .HarleyQueen{
+    background-image: url('../img/MaskGroup.png');
+}
+
+section article .Batman2{
+    background-image: url('../img/Frame1.png');
 }
 
 section article img {
-  border-radius: 50%;
-  width: 125px;
-  position: absolute;
-  top: 130px;
+    border-radius: 50%;
+    width: 125px;
+    position: absolute;
+    top: 130px;
 }
 
 section article h3 {
-  font-size: 24px;
-  margin-top: 70px;
-  text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 70px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 section article p {
-  font-size: 12px;
-  height: 120px;
-  margin: 10px 20px;
-  text-align: left;
+    font-size: 12px;
+    height: 120px;
+    margin: 10px 20px;
+    text-align: justify;
 }
 
 section article button {
-  background-color: #00669f;
-  border: none;
-  color: white;
-
-  margin: 25px;
-  padding: 10px 30px;
+    background-color: #00669f;
+    border: none;
+    color: white;
+    margin: 25px;
+    padding: 10px 30px;
 }
-
-/********** ESTILOS PARA EL FOOTER **********/
-
+.MujerM{
+    display: none;
+}
+.Superman{
+    display: none;
+}
 footer {
-  background-color: #00669f;
-  color: white;
-  padding: 30px 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #00669f;
+    color: white;
+    padding: 30px 0;
+    position: relative;
+    display: flex;
+    
+    flex-wrap: wrap;
 }
 
 footer img {
-  position: absolute;
-  right: 25px;
-  width: 100px;
+    position: absolute;
+    right: 25px;
+    width: 100px;
+}
+
+@media (max-width: 768px){
+    /* Tablets */
+.MujerM{
+    display: block;
+}
+.Superman{
+    display: block;
+}
+.BatmanDos{
+    display: none;
+}
+
+    footer{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 460px){
+    /* Smartphones */
+.BatmanUno{
+        margin-top: 20px;
+}
+.Harley{
+        display: none;
+}
+footer p{
+    font-size: 12px;
+    }
+
 }
