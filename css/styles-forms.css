@@ -110,6 +110,21 @@ main article{
     
   }
 
+  .buttons-container{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 0   
+}
+
+.buttons-container input {
+    padding: 10px;
+    width: 15%;
+    background-color: #1CD1B0 ;
+    font-size: 40px;
+}
+
 footer {
     background-color: #00669f;
     color: white;
