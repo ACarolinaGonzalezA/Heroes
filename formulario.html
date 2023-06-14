@@ -8,7 +8,13 @@
   </head>
   <body>
     <header>
-      <h2 class="header-h2">20% de descuento en todos los productos!</h2>
+      <section class="header-top">
+        <h2>20% de descuento en todos los productos!</h2>
+      </section>
+      <section class="header-logo">
+        <img src="img/Logo.png" alt="Logo tienda">
+        <h1>Nombre Tienda</h1>
+      </section>
       <section class="navegacion">
         <nav>
           <ul>
@@ -19,40 +25,43 @@
         </nav>
       </section>
     </header>
-    <h1>Nombre Tienda</h1>
+    
 
     <main>
-        <h2>Añadí tu Super!</h2>
-        <h3>Agregá tu personaje favorito completando las opciones</h3>
-
-      <section class="formulario">
+      <section>
+        <article>
+        <h2>Añadí tu super</h2>
+        <h3> Agregá tu personaje favorito cmpletando las opciones</h3>
         
-        <article>
-          <form action="/registro" method="POST">
-            <label for="nombre">*Nombre:</label>
-            <br />
-            <input type="text" name="nombre" id="nombre" />
-
-            <input
-              type="date"
-              name="fecha"
-              value="2023-06-12"
-              min="2018-01-01"
-              max="2022-12-31"
-            />
-            <label for="comentarios">Descripción</label>
-            <textarea
-              
-            ></textarea>
+        <div class="formularios">
+          <div class="caja-formulario">
+            <form action="/registro" method="POST">
+              <label for="nombre">*Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="fecha">Fecha</label>
+              <input
+                type="date"
+                name="fecha"
+                value="2023-06-12"
+              />
+              <label for="comentarios">Descripción</label>
+              <textarea
+              name="comentarios"
+              id="comentarios"
+              cols="30"
+              rows="10"
+              ></textarea>
           </form>
-        </article>
+        </div>
 
-        <article>
+        <div class="caja-formulario">
           <form action="/registro" method="POST">
             <label>Especie</label>
-            <select name="especie">
-              <option value=""></option>
-            </select>
+                  <select id="especie" name="especie">
+                    <option value="humano">Humano</option>
+                    <option value="alien">Alien</option>
+                    <option value="mutante">Mutante</option>
+                  </select>
             <label for="foto">Agregar Foto</label>
             <input
               type="file"
@@ -61,44 +70,43 @@
               accept=".jpeg"
               multiple
             />
-            <legend>Poderes</legend>
-            <label for="volar">
-              <input
-                type="checkbox"
-                name="poderes"
-                id="volar"
-                value="volar"
-              />
-              Volar
-            </label>
-            <label for="Superinteligencia">
-              <input type="checkbox" name="poderes" id="Superinteligencia" value="CSS" />
-              Superinteligencia
-            </label>
-            <label for="vista">
-              <input type="checkbox" name="poderes" id="vista" value="vista" />
-              Vista de rayo laser
-            </label>
-            <label for="Billetera">
-                <input type="checkbox" name="poderes" id="Billetera" value="Billetera" />
-                Billetera Gorda
-              </label>
-            <p>Tipo de Personaje</p>
-            <label for="heroe" class="vert">
-              <input type="radio" name="tipo" id="heroe" value="heroe" />
-              Heroe / Heroina
-            </label>
-            <label for="villano" class="vert">
-              <input type="radio" name="tipo" id="villano" value="villano" />
-              Villano / Villana
-            </label>
-            <br />
+            <label>Poderes</label>
+            <label for="volar" class="poder">
+              <input type="checkbox" id="poderes" name="volar" value="volar">
+              Volar</label>
+              <label for="superinteligencia" class="poder">
+                <input type="checkbox" id="poderes" name="superinteligencia" value="superinteligencia">
+                Superinteligencia</label>  
+              <label for="vista-rayo-laser" class="poder">
+                  <input type="checkbox" id="poderes" name="vista-rayo-laser" value="vista-rayo-laser">
+                  Vista de rayo láser</label>
+              
+                  <label for="billetera-gorda" class="poder">
+                    <input type="checkbox" id="poderes" name="billetera-gorda" value="billetera-gorda">
+                    Billetera gorda</label>
+              
+              
+              
+  
+            
+              <br>
 
-            <div class="buttons-container">
-              <input type="reset" value="Añadir" />
-            </div>
-          </form>
-        </article>
+              <label for="tipo-personaje">Tipo de personaje</label>
+              <label for="heroe" class="poder">  
+              <input type="radio" id="heroe" name="tipo-personaje" value="heroe">
+              Héroe/Heroína</label>
+              <label for="villano" class="poder">
+                <input type="radio" id="villano" name="tipo-personaje" value="villano">
+                Villano/Villana</label>
+              
+          </div>
+            
+        </div>
+        <div class="buttons-container">
+          <input type="reset" value="Añadir" />
+        </div>
+      </form>
+      </article>
       </section>
     </main>
     <footer>
